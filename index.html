@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title> Toggle Switch If You are Designer or Developer </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+<body>
+
+	<h1> Do You Want To Be 
+	<span class="naughty active"> Designer </span>
+	or
+	<span class="nice"> Developer </span>
+
+   </h1>
+   <div class="slider">
+   	 <div class="ball"></div>
+   </div>
+
+   <script type="text/javascript">
+   	
+
+   	let ball = document.querySelector('.ball');
+   	let naughtyText = document.querySelector('.naughty');
+   	let niceText = document.querySelector('.nice');
+   	let body = document.querySelector('body');
+   	ball.addEventListener("click",()=>{
+   		ball.classList.toggle('right')
+   		naughtyText.classList.toggle('active')
+   		niceText.classList.toggle('active');
+   		body.classList.toggle('green')
+   	});
+   </script>
+
+</body>
+
+</html>
